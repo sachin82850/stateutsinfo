@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States and UTs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Indian States and Union Territories</h1>
+    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for a state or UT..">
+    <table id="statesTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Area (km²)</th>
+                <th>Capital</th>
+                <th>Chief Minister</th>
+                <th>Governor</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
